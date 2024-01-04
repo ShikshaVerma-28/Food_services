@@ -1,0 +1,65 @@
+/* Navigation section  */
+#navbar{
+    flex-direction: column;
+    align-items: center;
+}
+/* #navbar::before {
+    content: "";
+    position: absolute;
+    background: rgb(158, 158, 158);
+    z-index: -1;
+    opacity: 0.4;
+    height: 105px;
+    width: 100%;
+} */
+
+
+/* Home Section*/
+.container::before{
+    height: 480px;
+}
+.heading{
+    padding: 3px;
+    margin-top: 80px;
+
+}
+.heading h3{
+font-size: 0.8rem;
+}
+.heading p{
+font-size: 0.5rem;
+}
+
+
+/* Service Section*/
+
+
+
+/* Client Section  */
+
+
+
+/* Contact Us Section  */
+
+
+/* Footer  */
+.contactus {
+    text-align: center;
+    padding: 20px;
+}
+
+.third1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.third1 input,
+.third1 textarea {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    padding: 5px;
+}

@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Service | myOnlineFoodService.com</title>
+    <link rel="stylesheet" media="screen and (max-width: 1301px)" href="phone.css">
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        #navbar {
+            display: flex;
+        }
+
+        #navbar::before {
+            content: "";
+            position: absolute;
+            background: rgb(158, 158, 158);
+            z-index: -1;
+            opacity: 0.4;
+            height:55px;
+            width: 100%;
+        }
+
+        nav img {
+            margin:0px;
+            margin-top: 5px;
+            margin-left: 20px;
+            margin-right: 8px;
+            padding: 2px;
+            height: 45px;
+            width: 90px;
+            /* position: absolute; */
+            filter: brightness(0.3);
+        }
+
+        nav ul {
+            display: flex;
+            /* margin-top: 2px; */
+            /* margin-left: 0px; */
+            list-style: none;
+            /* position: absolute; */
+            /* left: 70px; */
+        }
+
+        nav ul li {
+            /* margin-top: 20px;*/
+            margin: 15px 20px;
+            /* margin-right: 50px; */
+        }
+
+        a {
+            padding: 3px;
+            font-size: 21px;
+            font-weight: bolder;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            color: black;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: rgb(255, 255, 255);
+            border-radius: 8px;
+            background-color: rgb(31, 31, 31);
+        }
+
+        .container::before {
+            content: "";
+            position: absolute;
+            background: url(../website/main.jpg) no-repeat center center/cover;
+            z-index: -1;
+            opacity: 0.8;
+            height: 632px;
+            width: 100%;
+        }
+
+        .heading {
+            padding: 15px 300px;
+            padding-top: 25px;
+            margin-top: 120px;
+            margin-bottom: 143px;
+            text-align: center;
+            /* justify-content: center; */
+        }
+
+        .heading h3 {
+            margin: 18px 50px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 2.8rem;
+        }
+
+        .heading p {
+            /* margin: 8px 50px; */
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: 500;
+            font-size: 1.2rem;
+        }
+
+        .btn {
+            margin: 25px;
+            margin-bottom: 60px;
+            padding: 3px 17px;
+            border: 2px solid black;
+            border-radius: 4px;
+            font-weight: 900;
+            font-size: large;
+        }
+
+        .btn:hover {
+            color: rgb(232, 232, 232);
+            background-color: rgb(58, 58, 58);
+            cursor: pointer;
+        }
+
+        .ourservices {
+            /* background-color: red; */
+            text-align: center;
+            padding-bottom: 0px;
+            margin: 35px 1px;
+            /* height: 50px; */
+            /* background-color: aliceblue; */
+        }
+        
+        .primary {
+            padding: 5px;
+            /* background-color: aliceblue; */
+        }
+
+        .secondary {
+            justify-content: space-evenly;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .services {
+            /* margin: 20px; */
+            padding: 15px;
+            width: 550px;
+            border: 4px solid rgb(118, 33, 33);
+            border-radius: 20px;
+            margin-bottom: 20px;
+            background-color: rgb(255, 255, 255);
+        }
+
+        .services img {
+            margin-left: 200px;
+            margin-top: 4px;
+            filter: brightness();
+        }
+
+        .services h1 {
+            text-align: center;
+            font-family: Times, 'Times New Roman', serif;
+            margin: 6px;
+        }
+
+        .services p {
+            text-align: center;
+            justify-content: center;
+
+        }
+
+        .services1 {
+            /* margin: 20px; */
+            width: 550px;
+            padding: 15px;
+            border: 4px solid rgb(118, 33, 33);
+            border-radius: 20px;
+            margin-bottom: 20px;
+            background-color: rgb(255, 255, 255);
+        }
+
+        .services1 img {
+            margin-left: 200px;
+            margin-top: 4px;
+            filter: brightness();
+        }
+
+        .services1 h1 {
+            text-align: center;
+            font-family: Times, 'Times New Roman', serif;
+            margin: 6px;
+        }
+
+        .services1 p {
+            text-align: center;
+            justify-content: center;
+
+        }
+
+        .services2 {
+            /* margin: 20px; */
+            width: 550px;
+            padding: 15px;
+            border: 4px solid rgb(118, 33, 33);
+            border-radius: 20px;
+            margin-bottom: 20px;
+            background-color: rgb(255, 255, 255);
+        }
+
+        .services2 img {
+            margin-left: 200px;
+            margin-top: 4px;
+            filter: brightness();
+        }
+
+        .services2 h1 {
+            text-align: center;
+            font-family: Times, 'Times New Roman', serif;
+            margin: 6px;
+        }
+
+        .services2 p {
+            text-align: center;
+            justify-content: center;
+        }
+
+
+
+        .secondary1::before {
+            content: "";
+            position: absolute;
+            background: url(f2.jpg) no-repeat center center/cover;
+            z-index: -1;
+            opacity: 0.6;
+            height: 358px;
+            width: 100%;
+        }
+
+        .third {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 95px;
+            filter: brightness(0.7);
+            /* overflow: hidden; */
+        }
+
+        .ourclients {
+            text-align: center;
+            font-family: Times, 'Times New Roman', serif;
+            /* margin: 25px; */
+            height: 125px;
+            margin-top: 30px;
+            padding: 50px;
+            padding-bottom: 0px;
+            /* height: 125px; */
+        }
+        
+        .clients {
+            align-items: center;
+            margin: 3px 45px;
+        }
+
+        .clients:hover {
+            cursor: pointer;
+        }
+
+
+        .contact::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 500px;
+            z-index: -1;
+            opacity: 0.8;
+            background: url(order.jpg) no-repeat center center/cover;
+            /* filter: contrast(20%); */
+        }
+
+        .contactus {
+            text-align: center;
+            font-family: Times, 'Times New Roman', serif;
+            padding: 40px;
+        }
+
+        .third1 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .third1 input,
+        .third1 textarea {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 550px;
+            padding: 7px;
+            border-radius: 5px;
+            border: 2px solid black;
+        }
+
+        .third1 label {
+            /* margin: 2px 650px; */
+            font-weight: bold;
+            font-size: larger;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        .center {
+            background-color: rgb(49, 49, 49);
+            color: aliceblue;
+            overflow: hidden;
+            margin-top: 93px;
+            padding: 4px 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <nav id="navbar">
+            <img src="AB_Brand_Refresh_Logo_R.png" alt="Myfoodservice.com">
+            <ul>
+                <li class="box"><a href="#">Home</a></li>
+                <li class="box"><a href="#">Services</a></li>
+                <li class="box"><a href="#">About</a></li>
+                <li class="box"><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="heading">
+            <h3>Welcome to My Food Services</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, facere laborum deserunt iure nam Lorem
+                ipsum dolor sit amet.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, facere laborum .</p>
+            <button class="btn">Order Now</button>
+        </div>
+        <div class="primary">
+            <h1 class="ourservices">Our Services</h1>
+            <div class="secondary">
+                <section class="services">
+                    <img src="pizzab.jpg" alt="Error" height="150px" width="150px">
+                    <h1 class="tophead">Food Ordering</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus debitis, similique nihil quae
+                        explicabo veniam, eos fuga velit quas pariatur rem, cupiditate dicta illo dolorem. Voluptate,
+                        aspernatur hic! Sed laboriosam fugiat ea dolorum expedita? Lorem ipsum dolor sit amet,
+                        consectetur adipisicing elit. Repellat fuga iure quaerat maiores voluptatem corporis tempore
+                        magnam expedita odio dolores cumque voluptate, dolore nemo obcaecati, deserunt voluptas quisquam
+                        illum alias.</p>
+                </section>
+
+                <section class="services1">
+                    <img src="fruita.jpg" alt="Error" height="150px" width="150px">
+                    <h1 class="tophead">Fruits</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus debitis, similique nihil quae
+                        explicabo veniam, eos fuga velit quas pariatur rem, cupiditate dicta illo dolorem. Voluptate,
+                        aspernatur hic! Sed laboriosam fugiat ea dolorum expedita? Lorem ipsum dolor sit amet,
+                        consectetur adipisicing elit. Repellat fuga iure quaerat maiores voluptatem corporis tempore
+                        magnam expedita odio dolores cumque voluptate, dolore nemo obcaecati, deserunt voluptas quisquam
+                        illum alias.</p>
+                </section>
+
+                <section class="services2">
+                    <img src="saladd.jpg" alt="Error" height="150px" width="150px">
+                    <h1 class="tophead">Specials</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus debitis, similique nihil quae
+                        explicabo veniam, eos fuga velit quas pariatur rem, cupiditate dicta illo dolorem. Voluptate,
+                        aspernatur hic! Sed laboriosam fugiat ea dolorum expedita? Lorem ipsum dolor sit amet,
+                        consectetur adipisicing elit. Repellat fuga iure quaerat maiores voluptatem corporis tempore
+                        magnam expedita odio dolores cumque voluptate, dolore nemo obcaecati, deserunt voluptas quisquam
+                        illum alias.</p>
+                </section>
+            </div>
+        </div>
+
+        <div class="secondary1">
+            <h1 class="ourclients">Our Clients</h1>
+            <div class="third">
+                <section class="clients">
+                    <img src="Dell_logo_2016.svg.jpg" alt="Error" height="78px" width="80px">
+                </section>
+                <section class="clients">
+                    <img src="logob.jpg" alt="Error" height="70px" width="240px">
+                </section>
+                <section class="clients">
+                    <img src="180px-HP_logo_2012.svg.jpg" alt="Error" height="78px" width="80px">
+                </section>
+                <section class="clients">
+                    <img src="Apple_logo_black.svg.jpg" alt="Error" height="73px" width="75px">
+                </section>
+            </div>
+
+            <div class="contact">
+                <h1 class="contactus">Contacts Us</h1>
+                <div class="third1">
+                    <div>
+                        <label for="name">Name:</label>
+                        <input type="Name" id="name" placeholder="Name">
+                    </div>
+                    <div>
+                        <label for="e-mail">E-mail:</label>
+                        <input type="email" id="e-mail" placeholder="E-mail">
+                    </div>
+                    <div>
+                        <label for="number">Phone Number:</label>
+                        <input type="phone" id="number" placeholder="Number">
+                    </div>
+                    <div>
+                        <label for=" message">Message:</label>
+                        <textarea name="mytext" id="mytext" cols="15" rows="5"></textarea>
+                    </div>
+                </div>
+            </div>
+            <footer>
+                <div class="center">
+                    copyright &copy; www.myOnlineFoodService.com. All rights reserved!
+                </div>
+            </footer>
+        </div>
+</body>
+
+</html>
